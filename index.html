@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS代码练习区域代码块</title>
+    <script>
+      // var year;
+      // year = 10;
+      // var year = 10;
+      // console.log(year);
+      //    var yourgae = prompt('请输入你的年龄');
+      //     alert(yourgae);
+      //     var age ;
+      //     console.log(age)
+
+      // 2个变量值的交换
+      // var country1 = '中国';
+      // var country2 = '美国';
+      // var temp
+      // temp = country1;
+      // country1 = country2;
+      // country2 = temp;
+      // console.log(country1);
+      // console.log(country2);
+
+      // console.log(isNaN(11));
+      // console.log(isNaN('中国'));
+
+      // var str = '我是一个"前端"程序员';
+      // var str = "我是一个'前端'\n程序员";
+      // console.log(str);
+
+      // alert('十年生死两茫茫，不思量，自难忘，千里孤坟，\n无处话凄凉')
+
+      // var str = 'what do you do ?';
+      // console.log(str.length);
+      // console.log('My' + '我的');
+      // console.log(100 + 100);
+      // var age = 21;
+      // console.log('叶梓言今年' + age + '岁');
+      // console.log('叶梓言今年' + age + '岁');
+
+      // var school = prompt('你今年上几年级了？')
+      // var str = '我今年上' + school + '年级了'
+      // alert(str)
+
+      // var flage = true;
+      // var flage = false;
+      // console.log(true + 2);
+
+      // var str = '哈哈哈';
+      // console.log(typeof str);
+      // var num = 100;
+      // console.log(typeof num);
+
+      // var age = prompt('你今年多少岁了？');
+      // console.log(age);
+      // console.log(typeof age);
+      // console.log(21);
+      // alert(age)
+
+      // var num = 21;
+      // var str = num.toString();
+      // console.log(str);
+      // console.log(typeof str);
+      // console.log(String(num));
+      // console.log(num + '');
+
+      // var str = prompt('你今年几岁了？');
+      // console.log(str);
+      // console.log(typeof str);
+      // console.log(parseInt(str));
+
+      // console.log(parseFloat('2.21'));
+
+      // var str = '32';
+      // console.log(Number(str));
+      // console.log(Number('21'));
+
+      // console.log('21' - '1');
+      // console.log('21' * '1');
+
+      // -------计算年龄案例
+
+      // var year = prompt('请输入你的出生年份')        //year 这里 输出的是字符串类型
+      // var age = 2022 - year;                       //隐式转换，这里输出的 age 是数字类型
+      // console.log(typeof year);
+      // console.log(typeof age);
+      // alert('您今年已经' + age + '岁了')            //返回给用户结果  先完整写入  您今年已经18岁了  再通过引引加加将字符串相加  用户得到最终结果
+
+      //------- 简单计算器案例
+
+      //   var num = prompt("请输入的一个值"); //提示用户输入一个值
+      //   var num2 = prompt("请输入第二个值"); //提示用户输入第二个值
+      //   var result = parseFloat(num) + parseFloat(num2); //因为用户输入的是字符串类型 不能直接相加得到计算结果  （简单数据类型转换） 将num和num2字符串类型  通过parseFloat函数  转换为数值类型
+      //   document.write("您的结果是:" + result);
+
+      //   var num = 100 + 100;
+      //   console.log(num == 200);
+      //   var num1 = 0.1 + 100;
+      //   console.log(num1 == 100.1);
+      //   var num2 = 0.1 + 0.1;
+      //   console.log(num2 == 0.2);
+      //   var num3 = 0.1 + 0.2;
+      //   console.log(num3 == 0.3);
+
+      //   console.log(1 + 2);
+      //   console.log(10 * 10);
+      //   console.log(100 / 10);
+      //   console.log(10 % 7);         //取余数，判断一个数能不能被整除
+
+      //递增递减运算符，变量自加1
+
+      //   var num = 20;
+      //   ++num;
+      //   console.log(num);
+      //   num++;
+      //   console.log(num);
+      //前置递增先自加1 后返回值
+      //   var n = 10;
+      //   console.log(++n + 10);
+      //后置递增先返回值，后自加1
+      //   var p = 10;
+      //   console.log(p++ + 10);
+      //   console.log(p);
+      //   console.log(p +10);
+
+      //   var a = 100;
+      //   ++a;
+      //   var b = ++a + 100;
+      //   console.log(b);
+
+      //   var c = 100;
+      //   c++;
+      //   var d = c++ + 100;
+      //   console.log(d);
+
+      // console.log(7 >= 10);
+      // console.log(5 == 5);
+
+      // if(5>3){
+      //   // document.write('我不是叶梓言');
+      // }
+
+      //if括号里面条件表达式为TRUE，则执行{}里面的语句   如果为Flase，则执行后面的语句
+
+      // if(91<10){
+      //   alert('我不是叶梓言');
+      // }
+      // alert('吾问无为谓');
+
+      //进入网吧案例
+
+      // var age = prompt('请输入你的年龄');
+      // if(age >=18) {
+      // alert('请进入网吧')
+      // }
+      // alert('对不起,您被禁止进入网吧！');
+
+      //If   如果   else    否则
+      // var age = prompt('请输入你的年龄');
+      // if(age >=18){
+      //   alert('你可以进入网吧');
+      // }
+      // else{
+      //   alert('对不起,你被禁止进入网吧！');
+      // }
+
+      //_________________________________________________________________________________________________________________________________________________
+      //if 多分支语句
+
+      // var country = prompt('请输入你高考语文分数');
+      // if (country >= 120) {
+      //   alert('您可以免费进入景区,并且获得一份景区的大礼包！');
+      // }
+      // else if (country >= 110) {
+      //   alert('您可以免费进入景区！');
+      // }
+      // else if (country >= 90) {
+      // alert('请您支付50元的门票进入景区!');
+      // }
+      // else if (country <72) {
+      //   alert('对不起，请你滚出这个景区！');
+      // }
+      // else {
+      //   alert('请您支付100元门票进入景区!');
+      // }
+
+      // var country = prompt("请输入你高考语文分数");
+      // if (country >= 120) {
+      //   document.write("您可以免费进入景区,并且获得一份景区的大礼包！");
+      // } else if (country >= 110) {
+      //   document.write("您可以免费进入景区！");
+      // } else if (country >= 90) {
+      //   document.write("请您支付50元的门票进入景区!");
+      // } else if (country < 72) {
+      //   document.write("对不起，请你滚出这个景区！");
+      // } else {
+      //   document.write("请您支付100元门票进入景区!");
+      // }
+
+      //___________________________________________________________________________________________________________________________________________________________
+
+      // 三元表达式  结果二选一  简化版的if else
+
+      // var num = 100;
+      // var result = num > 1012 ? "是的" : "不是的";
+
+      // console.log(result);
+      // document.write(result);
+
+      // var num = prompt("请输入你喜欢的一个数字!");
+      // var result = num < 10 ? "0" + num : num;
+      // alert(result);
+
+      //___________________________________________________________________________________________________________________________________________________________
+      //switch分支语句  直接跳转执行  效率更高 (仅限于特定值)
+
+      // switch (2) {
+      //   case 1:
+      //     console.log('这是1');
+      //     break;
+      //   case 2:
+      //     console.log('这是2');
+      //     break;
+      //   case 3:
+      //     console.log('这是3');
+      //     break;
+      //   case 4:
+      //     console.log('这是4');
+      //     break;
+      //   default:
+      //     console.log('对不起,没有相匹配的结果!');
+      // }
+
+      //   var num = 3;
+      //   switch (num) {
+      //     case 1:
+      //       console.log("美国");
+      //       break;
+      //     case 2:
+      //       console.log("中国");
+      //       break;
+      //     case 3:
+      //       console.log("俄罗斯");
+      //       break;
+      //     case 4:
+      //       alert("英国");
+      //       break;
+      //     default:
+      //       alert("对不起,没有相匹配的结果!");
+
+      //    var role = prompt('请输入你想抽的角色幸运数字!')
+      //     switch (role) {
+      //       case '1':
+      //         alert('这是刻晴')
+      //         break;
+      //       case '2':
+      //        alert('这是甘雨!')
+      //         break;
+      //       case '3':
+      //        alert('这是迪卢克')
+      //         break;
+      //       case '4':
+      //         alert('这是钟离!');
+      //         break;
+      //       default:
+      //         alert('对不起，你什么也没抽到！');
+      //     }
+
+      //   var fruits = prompt("请输入你最喜欢的水果名称!");
+      //   switch (fruits) {
+      //     case "苹果":                                                          //case 后面的值写几个不同水果的名称 且必须要加引号 因为必须要全等匹配
+      //       console.log("苹果");
+      //       break;
+      //     case "梨子":
+      //       console.log("梨子");
+      //       break;
+      //     case "香蕉":
+      //       console.log("香蕉");
+      //       break;
+      //     default:
+      //       console.log("什么也没有!");
+      //   }
+
+      //_______________________________________________________________________________________________________________________________________________________________
+      //for循环
+
+      //            for (var n = 20; n <= 100; n++) {
+      // console.log('你给过的梦,已经足够,我幸福很久');
+      //            }
+
+      //            for (var n = 20; n <= 40; n++) {
+      // document.write('你给过的梦,已经足够,我幸福很久');
+      //            }
+
+      // for(var i = 10; i <=100; i++) {
+      // document.write('这是一个测试for循环的例子');
+      // }
+
+      // for (var i = 10; i >= 1; i--) {
+      //   document.write("这是一个测试for循环的例子");
+      // }
+
+      // var num = prompt('请你输入执行的次数');
+      // for (var i = 1;i<=num;i++) {
+      //   document.write("这是一个测试for循环的例子");
+      //   console.log('这是一个测试for循环的例子');
+      // }
+
+      //for循环执行不同代码
+
+      // for(var i =1;i<=100;i++){
+      //   console.log('我今年' + i +'岁了');
+      // }
+      // var i = prompt("请你输入你花费的抽数");
+      // for (var i = 1; i <= 10; i++) {
+      //   if (i == 1) {
+      //     console.log("这个人花费了" + i + "的抽数");
+      //   } else if (i == 10) {
+      //     document.write("这个人100%抽了限定五星角色");
+      //   } else {
+      //     document.write("这个人还不一定抽出了五星角色");
+      //   }
+      // }
+
+      //1---10之间所有整数相加的和
+      // var sum = 0;
+      // for (var i = 1; i <=10; i++){
+      //  sum = sum + i;
+
+      // }
+      // console.log(sum);
+
+      // for (var i = 1;i <= 100;i++){
+
+      //   console.log('执行循环');
+      // }
+
+      //       var num = prompt('请您输入执行的次数');
+      //       for (var i = 1;i <=num;i++){
+      // console.log('执行循环');
+      //       }
+
+      //       for (var i = 1;i <= 100;i++){
+      // console.log('这个人今年' + i + '岁了');
+      //       }
+
+      // for (var i = 1;i <= 100;i++){
+      // if (i == 1){
+      // console.log('这个人今年1岁,他出生了');
+      // }
+      // else if (i == 100){
+      // console.log('这个人今年100岁了,他死了');
+      // }
+      // else{
+      //   console.log('这个人今年' + i + '岁了');
+      // }
+      // }
+
+      // var sum = 0;
+      // for (var i = 1;i <=100;i++){
+      // sum = sum + i;
+      // }
+      // console.log(sum);
+
+      // var sum = 0;
+      // var average = 0;
+      // for (var i = 1;i <=100;i++){
+      // sum = sum + i;
+      // average = sum/100;
+      // }
+      // console.log(average);
+
+      // var num = prompt('请输入你的班级人数');
+      // var sum = 0;
+      // var average = 0;
+      // for (i = 1;i <= num;i++){
+      //   var score = prompt('请输入第' + i + '个学生成绩');
+      //   sum = sum + parseFloat (score);
+      // }
+      // average = sum / parseFloat (num);
+      // alert('学生总成绩为'+sum);
+      // alert('学生成绩平均数为' +average);
+
+      // var num = prompt("请你输入需要打印的星星数量");
+      // var str = ''
+      // for (var i = 1;i<=num;i++){
+      // str = str + '☆';
+      // }
+      // document.write(str);
+      // 2
+
+      //双重for循环；
+
+      // for (var i = 1;i <= 3;i++) {
+      // console.log('这是外层循环第一句测试');
+
+      // for (var e = 1;e <= 3; e++){
+      // console.log('这是里层循环第一句测试');
+      // }
+      // }
+
+      // var str = "";
+      // for (var i = 1; i <= 5; i++){
+      // for (var q = 1; q <= 5; q++){
+      // str = str + '☆';
+      // }
+      // str = str + '\n';                                           //打印一行星星之后  另起一行
+      // }
+      // console.log(str);
+
+      // var num = prompt("请输入需要打印的行数");
+      // var str = "";
+      // for (var i = 1; i <= num; i++) {
+      //   for (var q = 1; q <= num; q++) {
+      //     str = str + "☆";
+      //   }
+      //   str = str + "\n";
+      // }
+      // console.log(str);
+
+// _____________________________________________________________________________________________________________________________
+
+//倒立三角  正立三角  打印九九乘法表 {重难点!}
+
+      // var str = "";
+      // for (var i = 1; i <= 10; i++) {
+      //   for (var q = i; q <= 10; q++) {
+      //     str = str + "☆";
+      //   }
+      //   str = str + "\n";                          
+      // }
+      // console.log(str);
+
+      // var str = "";   
+      // for (var i = 1; i <= 9; i++) {
+      //   for (var q = 1; q <= i; q++) {
+      //     str = str + q + '*' + i + '=' + q * i + '\t';                   //1 x 2 = 2； 这是乘法公式 代入代码之中 字符串相加的形式写下来  
+      //   }                                                                 //q * i  是=后面的值  '\t'是缩进空格 tap键的缩写   用来处理九九乘法表间隙美观问题
+      //   str = str + "\n";
+      // }
+      // console.log(str);
+
+
+
+
+//while循环；
+// var num = 1;
+// while (num <= 100){
+// console.log(num);
+// num++;
+// }
+
+// var y = 1;
+// while (y <=100){
+//   console.log('他今年' + y + '岁了');
+//   y++;
+// }
+
+
+// var sum  = 0;
+// var i = 0;
+// while (i <= 100){
+// sum = sum + i;
+// i++
+// }
+// console.log(sum);
+
+
+
+var speak = prompt('你也喜欢学编程吗？');
+while (speak !== '喜欢'){
+speak = prompt('你也喜欢学编程吗')
+}
+alert('真好!')
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </head>
+  <body></body>
+</html>
