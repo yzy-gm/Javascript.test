@@ -444,44 +444,154 @@
       // }
       // console.log(str);
 
-      //while循环；
-      // var num = 1;
-      // while (num <= 100){
-      // console.log(num);
-      // num++;
-      // }
+      /*--------------------------------------------------------------while循环；
+        var num = 1;
+        while (num <= 100){
+        console.log(num);
+        num++;
+        }*/
 
-      // var y = 1;
-      // while (y <=100){
-      //   console.log('他今年' + y + '岁了');
-      //   y++;
-      // }
+      /*
+          var y = 1;
+          while (y <=100){
+            console.log('他今年' + y + '岁了');
+            y++;
+          }*/
+      /*
+          var sum  = 0;
+          var i = 0;
+          while (i <= 100){
+          sum = sum + i;
+          i++
+          }
+          console.log(sum);*/
 
-      // var sum  = 0;
-      // var i = 0;
-      // while (i <= 100){
-      // sum = sum + i;
-      // i++
-      // }
-      // console.log(sum);
+      /*
+          var speak = prompt("你也喜欢学编程吗？");
+            while (speak !== "喜欢") {
+              speak = prompt("你也喜欢学编程吗");
+            }
+            alert("真好!");
+        */
+      //-------------------------------------------------------------do while 循环
+      /*var i = 5;
+        do{
+        console.log('我爱前端');
+        i++;
+        }while (i >= 20);*/
 
-      var speak = prompt("你也喜欢学编程吗？");
-      while (speak !== "喜欢") {
-        speak = prompt("你也喜欢学编程吗");
+      /*var i = 1;
+        do {
+          console.log('他今年' + i + '岁了');
+          i++
+        }while (i <= 100);
+        */
+
+      /*var sum = 0;
+      var i = 1;
+      do{
+    sum = sum + i
+    i++;
+      }while (i <= 100);
+      console.log(sum);
+      */
+
+      /*
+      do{
+    var speak = prompt('你爱我吗？');
+      }while(speak !== '我爱你');
+      alert('我也爱你')
+      */
+
+      /*
+        continue关键字:跳出当前循环，但是会直接执行后面的循环;
+        for (var i = 1; i <= 10; i++)
+        {
+          if (i == 5)
+        {                                                                                                                                     continue;
+        }
+        console.log('我爱学习' + i + '次JS');
+        }
+        */
+
+      //1~100之间 除了能被7整除之外 整数的和
+      /*
+        1~100之间能被7整除的数有 7,14,21,28,35,42,49,56,63,70,77,84,91,98
+        能被7除尽，这些数字除以7的余数为0，即为循环体是否执行下面语句的条件；
+        使用continue通过“关键字”跳出循环的特性，先声明一个变量sum = 0,
+        再写for循环基本参数，通过continue跳出不执行的数字之外，求sum；
+        var sum = 0;
+        for (var i = 1; i <= 100; i++){
+          if (i % 7 == 0){
+            continue;
+          }
+          sum += i;
+        }
+        document.write("除了能被7整除之外所有整数的和是" +sum);
+        */
+
+      /* break关键字：结束整个循环；
+      for (var i = 1; i <= 10; i++) {
+        if (i == 5) {
+          break;
+        }
       }
-      alert("真好!");
+      document.write("这是循环的第" + i + "次,才跳出循环");
+      */
 
+      /*数组;
+      数组索引，从左到右，从0开始，如果想要输出元素“我爱薛之谦”，即先找到索引1；
+      var arr = [1314,'我爱薛之谦',true];
+      console.log(arr);
+      console.log(arr[1]);
+    
+      var arr1 = ['星期一','星期二','星期三','星期四','星期五','星期六','星期天'];
+      console.log(arr1[6]);
+      */
 
+      /*遍历数组;*(因为数组索引号是从0开始的，所以i = 0，而不是 = 1)
+      var arr2 = [1314,'我爱薛之谦',true];
+      for (i = 0; i < 3; i++){
+        console.log(arr2[i]);
+      }
+      */
+     /*
+      var arr3 = ['关羽','张飞','马超','赵云','黄忠','刘备','姜维'];
+      for (i = 0; i < 7; i++){
+        console.log(arr3[i]);
+      }
+      */
 
+     /*快速获取数组字符长度 (数组名.length)输出即可 eg:arry3.length
+     arr.length 动态监测数组中的元素个数
+     *数组长度是元素的个数，不要和索引号（从0开始）弄混淆了！
+      var arr3 = ['关羽','张飞','马超','赵云','黄忠','刘备','姜维','叶梓言'];
+      for (i = 0; i < arr3.length; i++){
+        console.log(arr3[i]);
+      }
+      */
+     /*
+      var arr = [2,6,1,7,4];
+      var sum = 0;
+      var average = 0;
+      for (i = 0; i < arr.length; i++){
+      sum = sum + arr[i];                //*这里加的是数组元素arr[]，而不是计数起器
+      average = sum / 5;
+      }
+      console.log(sum,average);
+      */
 
-
-
-
-
-
-
-      
+      //求数组中的最小值;
+      var arr = [66,74,9,1,11,63,88,99,110];
+      var min = arr[0];                        //声明一个最小值变量min，并且通过索引号赋值第一个数组元素;
+      for (i = 1; i < arr.length; i++){       //for循环遍历数组 *因为前面已经使用过数组中的第一个元素，所以i = 1最好；
+      if (arr[i] < min){                      //数组其他元素与声明的最小值数组相比较
+      min = arr[i];                           //最小值与变量min相等，输出min的值即可
+      }
+      }
+      console.log('该数组中的最小值是' +min);
     </script>
   </head>
+
   <body></body>
 </html>
